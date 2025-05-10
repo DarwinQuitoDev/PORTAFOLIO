@@ -21,22 +21,58 @@ const Projects = () => {
   const projects: Project[] = [
     {
       id: 1,
-      title: "CRM WhatsApp Integration",
-      description: "Sistema de gestión de relaciones con clientes integrado con WhatsApp para CompuStore Reina Flores.",
-      image: "/projects/crm.jpg",
-      technologies: ["Node.js", "React", "MongoDB", "WhatsApp API"],
-      githubUrl: "https://github.com/yourusername/crm-whatsapp",
-      demoUrl: "https://demo.project.com"
+      title: "FACTURA_BACK",
+      description: "API RESTful para facturación electrónica con autenticación, gestión de clientes, productos y conexión a base de datos.",
+      image: "/images/factura_back.png",
+      technologies: ["Node.js", "Express", "Sequelize", "MySQL", "JWT"],
+      githubUrl: "https://github.com/tu_usuario/FACTURA_BACK",
+      demoUrl: ""
     },
     {
       id: 2,
-      title: "API REST NexGen",
-      description: "Desarrollo de APIs RESTful para gestión de servicios empresariales.",
-      image: "/projects/api.jpg",
-      technologies: ["Node.js", "Express", "PostgreSQL", "JWT"],
-      githubUrl: "https://github.com/yourusername/nexgen-api",
-      demoUrl: "https://api.nexgen.com"
+      title: "FACTURA_FRONT",
+      description: "Interfaz web para emisión de facturas electrónicas y administración de datos del sistema.",
+      image: "/images/factura_front.png",
+      technologies: ["React", "Vite", "Tailwind CSS", "Axios"],
+      githubUrl: "https://github.com/tu_usuario/FACTURA_FRONT",
+      demoUrl: ""
     },
+    {
+      id: 3,
+      title: "GYM-CENTER-DEMO",
+      description: "App para gestión de socios, membresías y rutinas de un gimnasio.",
+      image: "/images/gym_center.png",
+      technologies: ["React", "Node.js", "Express", "MongoDB"],
+      githubUrl: "https://github.com/tu_usuario/GYM-CENTER-DEMO",
+      demoUrl: ""
+    },
+    {
+      id: 4,
+      title: "Landing Page - CompuStore",
+      description: "Landing page profesional para tienda de computadoras con diseño responsivo y enfoque comercial.",
+      image: "/images/landing_compustore.png",
+      technologies: ["HTML5", "CSS3", "JavaScript", "Bootstrap"],
+      githubUrl: "https://github.com/tu_usuario/LANDINGPAGE-COMPUSTORE",
+      demoUrl: ""
+    },
+    {
+      id: 5,
+      title: "PORTAFOLIO",
+      description: "Sitio web personal que muestra tus proyectos, experiencia y enlaces a redes sociales.",
+      image: "/images/portafolio.png",
+      technologies: ["React", "Vite", "Tailwind CSS"],
+      githubUrl: "https://github.com/tu_usuario/PORTAFOLIO",
+      demoUrl: "https://tuportafolio.com"
+    },
+    {
+      id: 6,
+      title: "TEST_PLUS",
+      description: "Entorno de pruebas para desarrollo de APIs RESTful con autenticación y consumo de datos.",
+      image: "/images/test_plus.png",
+      technologies: ["Node.js", "Express", "React", "Vite", "JWT"],
+      githubUrl: "https://github.com/tu_usuario/TEST-APIS",
+      demoUrl: ""
+    }
     // Añade más proyectos según necesites
   ];
 
