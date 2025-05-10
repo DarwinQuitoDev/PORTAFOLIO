@@ -1,12 +1,12 @@
 import { useState } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
+import logo from '../assets/web/YO-SOY-DEV.webp'
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const navLinks = [
     { id: 1, text: 'Inicio' },
-    { id: 2, text: 'Sobre mí' },
     { id: 3, text: 'Proyectos' },
     { id: 4, text: 'Habilidades' },
     { id: 5, text: 'Experiencia' },
@@ -16,11 +16,12 @@ const Navbar = () => {
   const toggleMenu = () => setIsOpen(!isOpen);
 
   return (
-    <nav className="fixed top-0 left-0 w-full bg-gray-900 text-white shadow-md z-50">
-      <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+    <nav className="fixed top-0 left-0 w-full border-slate-700/50 bg-gray-900 text-gray-100 shadow-md z-50">
+      <div className="max-w-7xl mx-auto px-6 py-3.5 flex items-center justify-between">
+        
         {/* Logo */}
         <a href="#inicio" className="text-2xl font-extrabold tracking-wide hover:text-indigo-400 transition">
-          Darwin Quito
+          <img src={logo} className='h-12'></img>
         </a>
 
         {/* Desktop Navigation */}
@@ -29,7 +30,7 @@ const Navbar = () => {
             <li key={id}>
               <a
                 href={`#${text.toLowerCase().replace(/\s+/g, '')}`}
-                className="text-sm font-medium hover:text-indigo-400 transition-colors duration-200"
+                className="text-sm font-serif hover:text-indigo-400 transition-colors duration-200"
               >
                 {text}
               </a>

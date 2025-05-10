@@ -60,49 +60,49 @@ const Contact = () => {
   ];
 
   return (
-    <section id="contacto" className="py-20 bg-gray-900">
+    <section id="contacto" className="py-5 bg-black text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           ref={ref}
           initial={{ opacity: 0, y: 50 }}
           animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
           transition={{ duration: 0.5 }}
-          className="text-center mb-12"
+          className="text-center mb-16"
         >
-          <h2 className="text-4xl font-bold text-white mb-4">Contacto</h2>
-          <div className="w-20 h-1 bg-blue-500 mx-auto"></div>
+          <h2 className="text-4xl sm:text-5xl font-bold tracking-tight mb-4">Contáctame</h2>
+          <div className="w-20 h-1 bg-blue-500 mx-auto rounded"></div>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-start">
           {/* Contact Information */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             animate={inView ? { opacity: 1, x: 0 } : { opacity: 0, x: -50 }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-            <h3 className="text-2xl font-bold text-white mb-6">Información de Contacto</h3>
-            <div className="space-y-4">
+            <h3 className="text-2xl font-semibold mb-6">Información de contacto</h3>
+            <div className="space-y-5">
               <a
-                href="mailto:quito1b2015@gmail.com"
-                className="flex items-center text-gray-300 hover:text-blue-400 transition-colors"
+                href="mailto:dfquitoc_per@outlook.com"
+                className="flex items-center gap-3 text-gray-300 hover:text-blue-400 transition-all"
               >
-                <FaEnvelope className="mr-3 text-xl" />
-                quito1b2015@gmail.com
+                <FaEnvelope className="text-xl" />
+                dfquitoc_per@outlook.com
               </a>
               <a
                 href="https://wa.me/593963791150"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center text-gray-300 hover:text-blue-400 transition-colors"
+                className="flex items-center gap-3 text-gray-300 hover:text-blue-400 transition-all"
               >
-                <FaWhatsapp className="mr-3 text-xl" />
+                <FaWhatsapp className="text-xl" />
                 +593 96 379 1150
               </a>
             </div>
 
-            <div className="mt-8">
-              <h4 className="text-xl font-semibold text-white mb-4">Sígueme en:</h4>
-              <div className="flex space-x-4">
+            <div className="mt-10">
+              <h4 className="text-xl font-semibold mb-4">Sígueme en:</h4>
+              <div className="flex gap-4 mt-4">
                 {socialLinks.map(({ id, icon: Icon, url, label }) => (
                   <a
                     key={id}
@@ -125,7 +125,7 @@ const Contact = () => {
             animate={inView ? { opacity: 1, x: 0 } : { opacity: 0, x: 50 }}
             transition={{ duration: 0.5, delay: 0.3 }}
           >
-            <form onSubmit={handleSubmit} className="space-y-6">
+            <form onSubmit={handleSubmit} className="space-y-4">
               <div>
                 <label htmlFor="name" className="block text-sm font-medium text-gray-300">
                   Nombre
@@ -137,7 +137,7 @@ const Contact = () => {
                   value={formData.name}
                   onChange={handleChange}
                   required
-                  className="mt-1 block w-full rounded-md bg-gray-800 border-gray-700 text-white shadow-sm focus:border-blue-500 focus:ring-blue-500"
+                  className="mt-1 w-full rounded-xl bg-gray-800 border border-gray-700 p-3 text-sm text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
                 />
               </div>
               <div>
@@ -151,7 +151,7 @@ const Contact = () => {
                   value={formData.email}
                   onChange={handleChange}
                   required
-                  className="mt-1 block w-full rounded-md bg-gray-800 border-gray-700 text-white shadow-sm focus:border-blue-500 focus:ring-blue-500"
+                  className="mt-1 w-full rounded-xl bg-gray-800 border border-gray-700 p-3 text-sm text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
                 />
               </div>
               <div>
@@ -165,21 +165,21 @@ const Contact = () => {
                   onChange={handleChange}
                   required
                   rows={4}
-                  className="mt-1 block w-full rounded-md bg-gray-800 border-gray-700 text-white shadow-sm focus:border-blue-500 focus:ring-blue-500"
+                  className="mt-1 w-full rounded-xl bg-gray-800 border border-gray-700 p-3 text-sm text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
                 />
               </div>
               <button
                 type="submit"
                 disabled={status.submitting}
-                className="w-full py-3 px-4 border border-transparent rounded-md shadow-sm text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-colors disabled:opacity-50"
+                className="w-full py-3 px-4 rounded-xl bg-blue-600 hover:bg-blue-700 transition-all duration-300 text-white font-medium disabled:opacity-50 shadow-lg"
               >
                 {status.submitting ? 'Enviando...' : 'Enviar Mensaje'}
               </button>
               {status.submitted && (
-                <p className="text-green-400">¡Mensaje enviado con éxito!</p>
+                <p className="text-sm text-green-400 mt-2">¡Mensaje enviado con éxito!</p>
               )}
               {status.error && (
-                <p className="text-red-400">Hubo un error al enviar el mensaje. Por favor, inténtalo de nuevo.</p>
+                <p className="text-sm text-red-400 mt-2">Hubo un error al enviar el mensaje. Por favor, inténtalo de nuevo.</p>
               )}
             </form>
           </motion.div>

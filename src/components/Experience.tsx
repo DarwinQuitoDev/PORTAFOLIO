@@ -55,35 +55,35 @@ const Experience = () => {
   ];
 
   return (
-    <section id="experiencia" className="py-20 bg-gray-800">
+    <section id="experiencia" className="py-10 bg-black">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           ref={ref}
           initial={{ opacity: 0, y: 50 }}
           animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
           transition={{ duration: 0.5 }}
-          className="text-center mb-12"
         >
           <h2 className="text-4xl font-bold text-white mb-4">Experiencia Laboral</h2>
-          <div className="w-20 h-1 bg-blue-500 mx-auto"></div>
+          <div className="w-83 h-1 bg-blue-500"></div>
         </motion.div>
 
-        <div className="relative">
-          <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-blue-500"></div>
-          
-          {experiences.map((exp, index) => (
+        <div className="relative pl-8">
+          {/* Línea vertical ahora en el lado izquierdo */}
+          <div className="absolute left-30 top-0 h-full w-1 bg-blue-500"></div>
+
+          {experiences.map((exp) => (
             <motion.div
               key={exp.id}
-              initial={{ opacity: 0, x: index % 2 === 0 ? -50 : 50 }}
-              animate={inView ? { opacity: 1, x: 0 } : { opacity: 0, x: index % 2 === 0 ? -50 : 50 }}
+              initial={{ opacity: 0, x: 50 }}
+              animate={inView ? { opacity: 1, x: 0 } : { opacity: 0, x: 50 }}
               transition={{ duration: 0.5, delay: exp.id * 0.1 }}
-              className={`flex items-center mb-8 ${
-                index % 2 === 0 ? 'flex-row-reverse' : ''
-              }`}
+              className="flex items-start relative"
             >
-              <div className={`w-1/2 ${index % 2 === 0 ? 'pl-8' : 'pr-8'} text-${
-                index % 2 === 0 ? 'left' : 'right'
-              }`}>
+              {/* Punto marcador en la línea */}
+              <div className="absolute left-22.5 w-3 h-3 bg-blue-500 rounded-full mt-12 -ml-1.5 z-10"></div>
+
+              {/* Contenido alineado a la derecha de la línea */}
+              <div className="ml-30 w-full mt-5 md:w-3/4">
                 <div className="bg-gray-900 p-6 rounded-lg shadow-lg">
                   <div className="flex items-center mb-2">
                     <FaBriefcase className="text-blue-400 text-xl mr-2" />
@@ -94,7 +94,6 @@ const Experience = () => {
                   <p className="text-gray-300">{exp.description}</p>
                 </div>
               </div>
-              <div className="w-3 h-3 bg-blue-500 rounded-full absolute left-1/2 transform -translate-x-1/2"></div>
             </motion.div>
           ))}
         </div>

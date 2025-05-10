@@ -55,7 +55,7 @@ const Skills = () => {
   ];
 
   return (
-    <section id="habilidades" className="py-20 bg-gray-900">
+    <section id="habilidades" className="py-20 bg-black">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           ref={ref}
@@ -75,7 +75,7 @@ const Skills = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
               transition={{ duration: 0.5, delay: category.id * 0.1 }}
-              className="bg-gray-800 p-6 rounded-lg"
+              className="bg-gray-900 hover:bg-gray-800 p-6 rounded-lg"
             >
               <div className="flex items-center mb-4">
                 <category.icon className="text-blue-400 text-2xl mr-2" />
@@ -85,7 +85,7 @@ const Skills = () => {
                 {category.skills.map((skill, index) => (
                   <span
                     key={index}
-                    className="px-3 py-1 bg-gray-700 text-sm text-gray-300 rounded-full"
+                    className="px-3 py-1 bg-gray-700 hover:bg-gray-300 text-sm text-gray-300 hover:text-gray-700 rounded-full"
                   >
                     {skill}
                   </span>
