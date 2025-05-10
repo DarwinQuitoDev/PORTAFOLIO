@@ -33,7 +33,7 @@ const Projects = () => {
       description: "API RESTful para facturación electrónica con autenticación, gestión de clientes, productos y conexión a base de datos.",
       image: Dev_2,
       technologies: ["Node.js", "Express", "Sequelize", "MySQL", "JWT"],
-      githubUrl: "https://github.com/tu_usuario/FACTURA_BACK",
+      githubUrl: "https://github.com/DarwinQuitoDev/FACTURA_BACK",
       demoUrl: ""
     },
     {
@@ -42,7 +42,7 @@ const Projects = () => {
       description: "Interfaz web para emisión de facturas electrónicas y administración de datos del sistema.",
       image: Dev_1,
       technologies: ["React", "Vite", "Tailwind CSS", "Axios"],
-      githubUrl: "https://github.com/tu_usuario/FACTURA_FRONT",
+      githubUrl: "https://github.com/DarwinQuitoDev/FACTURA_FRONT",
       demoUrl: ""
     },
     {
@@ -51,7 +51,7 @@ const Projects = () => {
       description: "App para gestión de socios, membresías y rutinas de un gimnasio.",
       image: Dev_4,
       technologies: ["React", "Node.js", "Express", "MongoDB"],
-      githubUrl: "https://github.com/tu_usuario/GYM-CENTER-DEMO",
+      githubUrl: "https://github.com/DarwinQuitoDev/GYM-CENTER-DEMO",
       demoUrl: ""
     },
     {
@@ -60,7 +60,7 @@ const Projects = () => {
       description: "Landing page profesional para tienda de computadoras con diseño responsivo y enfoque comercial.",
       image: Dev_6,
       technologies: ["HTML5", "CSS3", "JavaScript", "Bootstrap"],
-      githubUrl: "https://github.com/tu_usuario/LANDINGPAGE-COMPUSTORE",
+      githubUrl: "https://github.com/DarwinQuitoDev/LANDING-PAGE",
       demoUrl: ""
     },
     {
@@ -69,8 +69,8 @@ const Projects = () => {
       description: "Sitio web personal que muestra tus proyectos, experiencia y enlaces a redes sociales.",
       image: Dev_3,
       technologies: ["React", "Vite", "Tailwind CSS"],
-      githubUrl: "https://github.com/tu_usuario/PORTAFOLIO",
-      demoUrl: "https://tuportafolio.com"
+      githubUrl: "https://github.com/DarwinQuitoDev/PORTAFOLIO",
+      demoUrl: ""
     },
     {
       id: 6,
@@ -78,7 +78,7 @@ const Projects = () => {
       description: "Entorno de pruebas para desarrollo de APIs RESTful con autenticación y consumo de datos.",
       image: Dev_5,
       technologies: ["Node.js", "Express", "React", "Vite", "JWT"],
-      githubUrl: "https://github.com/tu_usuario/TEST-APIS",
+      githubUrl: "https://github.com/DarwinQuitoDev/TEST_PLUS",
       demoUrl: ""
     }
     // Añade más proyectos según necesites
