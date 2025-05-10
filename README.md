@@ -24,4 +24,4 @@ npm run dev
 
 ## Autor
 
-Jorge Salgado Silva
+Darwin Quito
