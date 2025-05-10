@@ -2,6 +2,14 @@ import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 
+import Dev_1 from '../assets/projects/1.webp';
+import Dev_2 from '../assets/projects/2.webp';
+import Dev_3 from '../assets/projects/3.webp';
+import Dev_4 from '../assets/projects/4.webp';
+import Dev_5 from '../assets/projects/5.webp';
+import Dev_6 from '../assets/projects/6.webp';
+
+
 interface Project {
   id: number;
   title: string;
@@ -23,7 +31,7 @@ const Projects = () => {
       id: 1,
       title: "FACTURA_BACK",
       description: "API RESTful para facturación electrónica con autenticación, gestión de clientes, productos y conexión a base de datos.",
-      image: "/images/factura_back.png",
+      image: Dev_2,
       technologies: ["Node.js", "Express", "Sequelize", "MySQL", "JWT"],
       githubUrl: "https://github.com/tu_usuario/FACTURA_BACK",
       demoUrl: ""
@@ -32,7 +40,7 @@ const Projects = () => {
       id: 2,
       title: "FACTURA_FRONT",
       description: "Interfaz web para emisión de facturas electrónicas y administración de datos del sistema.",
-      image: "/images/factura_front.png",
+      image: Dev_1,
       technologies: ["React", "Vite", "Tailwind CSS", "Axios"],
       githubUrl: "https://github.com/tu_usuario/FACTURA_FRONT",
       demoUrl: ""
@@ -41,7 +49,7 @@ const Projects = () => {
       id: 3,
       title: "GYM-CENTER-DEMO",
       description: "App para gestión de socios, membresías y rutinas de un gimnasio.",
-      image: "/images/gym_center.png",
+      image: Dev_4,
       technologies: ["React", "Node.js", "Express", "MongoDB"],
       githubUrl: "https://github.com/tu_usuario/GYM-CENTER-DEMO",
       demoUrl: ""
@@ -50,7 +58,7 @@ const Projects = () => {
       id: 4,
       title: "Landing Page - CompuStore",
       description: "Landing page profesional para tienda de computadoras con diseño responsivo y enfoque comercial.",
-      image: "/images/landing_compustore.png",
+      image: Dev_6,
       technologies: ["HTML5", "CSS3", "JavaScript", "Bootstrap"],
       githubUrl: "https://github.com/tu_usuario/LANDINGPAGE-COMPUSTORE",
       demoUrl: ""
@@ -59,7 +67,7 @@ const Projects = () => {
       id: 5,
       title: "PORTAFOLIO",
       description: "Sitio web personal que muestra tus proyectos, experiencia y enlaces a redes sociales.",
-      image: "/images/portafolio.png",
+      image: Dev_3,
       technologies: ["React", "Vite", "Tailwind CSS"],
       githubUrl: "https://github.com/tu_usuario/PORTAFOLIO",
       demoUrl: "https://tuportafolio.com"
@@ -68,13 +76,15 @@ const Projects = () => {
       id: 6,
       title: "TEST_PLUS",
       description: "Entorno de pruebas para desarrollo de APIs RESTful con autenticación y consumo de datos.",
-      image: "/images/test_plus.png",
+      image: Dev_5,
       technologies: ["Node.js", "Express", "React", "Vite", "JWT"],
       githubUrl: "https://github.com/tu_usuario/TEST-APIS",
       demoUrl: ""
     }
     // Añade más proyectos según necesites
   ];
+
+  const imgElement = document.createElement('img');
 
   return (
     <section id="proyectos" className="py-20 bg-black">
@@ -101,7 +111,7 @@ const Projects = () => {
             >
               <div className="relative h-48">
                 <img
-                  src={project.image}
+                  src={imgElement.src = project.image}
                   alt={project.title}
                   className="w-full h-full object-cover"
                 />
