@@ -8,6 +8,8 @@ import Dev_3 from '../assets/projects/3.webp';
 import Dev_4 from '../assets/projects/4.webp';
 import Dev_5 from '../assets/projects/5.webp';
 import Dev_6 from '../assets/projects/6.webp';
+import Dev_7 from '../assets/projects/7.webp';
+import Dev_8 from '../assets/projects/8.webp';
 
 
 interface Project {
@@ -65,6 +67,24 @@ const Projects = () => {
     },
     {
       id: 5,
+      title: "ABBYTEX - FRONT",
+      description: " Landing Page para ABBYTEX, fabrica distribuidora de medias y calcetines.",
+      image: Dev_7,
+      technologies: ["Node.js", "Express", "React", "Vite", "Vercel", "Neon Bdd"],
+      githubUrl: "https://github.com/DarwinQuitoDev/ABBYTEX.git",
+      demoUrl: "https://abbytex.vercel.app/"
+    },
+    {
+      id: 6,
+      title: "MOVISA",
+      description: " Landing Page para Movisa, centro fisioterapeutico de Otavalo.",
+      image: Dev_8,
+      technologies: ["Tailwind CSS", "Express", "React", "Vite", "Vercel"],
+      githubUrl: "https://github.com/DarwinQuitoDev/MOVISA.git",
+      demoUrl: "https://movisa.vercel.app/"
+    },
+    {
+      id: 7,
       title: "PORTAFOLIO",
       description: "Sitio web personal que muestra tus proyectos, experiencia y enlaces a redes sociales.",
       image: Dev_3,
@@ -73,7 +93,7 @@ const Projects = () => {
       demoUrl: "https://portafolio-zeta-sepia.vercel.app/"
     },
     {
-      id: 6,
+      id: 8,
       title: "TEST_PLUS",
       description: "Entorno de pruebas para desarrollo de APIs RESTful con autenticación y consumo de datos.",
       image: Dev_5,
@@ -81,24 +101,6 @@ const Projects = () => {
       githubUrl: "https://github.com/DarwinQuitoDev/TEST_PLUS",
       demoUrl: ""
     },
-    {
-      id: 7,
-      title: "ABBYTEX - FRONT",
-      description: " Landing Page para ABBYTEX, fabrica distribuidora de medias y calcetines.",
-      image: Dev_5,
-      technologies: ["Node.js", "Express", "React", "Vite", "JWT"],
-      githubUrl: "https://github.com/DarwinQuitoDev/ABBYTEX.git",
-      demoUrl: "https://abbytex.vercel.app/"
-    },
-    {
-      id: 8,
-      title: "MOVISA",
-      description: " Landing Page para Movisa, centro fisioterapeutico de Otavalo.",
-      image: Dev_5,
-      technologies: ["Node.js", "Express", "React", "Vite", "JWT"],
-      githubUrl: "https://github.com/DarwinQuitoDev/MOVISA.git",
-      demoUrl: "https://movisa.vercel.app/"
-    }
     // Añade más proyectos según necesites
   ];
 
