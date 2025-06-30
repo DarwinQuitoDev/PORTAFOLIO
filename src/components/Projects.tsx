@@ -70,7 +70,7 @@ const Projects = () => {
       image: Dev_3,
       technologies: ["React", "Vite", "Tailwind CSS"],
       githubUrl: "https://github.com/DarwinQuitoDev/PORTAFOLIO",
-      demoUrl: ""
+      demoUrl: "https://portafolio-zeta-sepia.vercel.app/"
     },
     {
       id: 6,
@@ -80,6 +80,24 @@ const Projects = () => {
       technologies: ["Node.js", "Express", "React", "Vite", "JWT"],
       githubUrl: "https://github.com/DarwinQuitoDev/TEST_PLUS",
       demoUrl: ""
+    },
+    {
+      id: 7,
+      title: "ABBYTEX - FRONT",
+      description: " Landing Page para ABBYTEX, fabrica distribuidora de medias y calcetines.",
+      image: Dev_5,
+      technologies: ["Node.js", "Express", "React", "Vite", "JWT"],
+      githubUrl: "https://github.com/DarwinQuitoDev/ABBYTEX.git",
+      demoUrl: "https://abbytex.vercel.app/"
+    },
+    {
+      id: 8,
+      title: "MOVISA",
+      description: " Landing Page para Movisa, centro fisioterapeutico de Otavalo.",
+      image: Dev_5,
+      technologies: ["Node.js", "Express", "React", "Vite", "JWT"],
+      githubUrl: "https://github.com/DarwinQuitoDev/MOVISA.git",
+      demoUrl: "https://movisa.vercel.app/"
     }
     // Añade más proyectos según necesites
   ];
